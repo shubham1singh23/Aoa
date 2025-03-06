@@ -5,7 +5,7 @@ public class LongestCommonSubsequence {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter First string");
         String s1=sc.next();
-        System.out.println("Enter First string");
+        System.out.println("Enter Second string");
         String s2=sc.next();
 
         char[] a=s1.toCharArray();
