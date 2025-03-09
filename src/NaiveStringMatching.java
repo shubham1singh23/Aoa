@@ -8,7 +8,7 @@ public class NaiveStringMatching {
     public static void main(String[] args) {
         int window=pattern.length();
         int n=s.length();
-        boolean isSame;
+
         List<Integer> ans=new ArrayList<>();
 
         for (int i=0;i<=n-window;i++){
