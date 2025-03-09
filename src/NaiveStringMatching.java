@@ -12,21 +12,9 @@ public class NaiveStringMatching {
         List<Integer> ans=new ArrayList<>();
 
         for (int i=0;i<=n-window;i++){
-            isSame=true;
-            for (int j=i;j<i+window;j++){
-                if (s.charAt(j)!=pattern.charAt(j-i))
-                {
-
-                    isSame=false;
-                    break;
-                }
-
-
-            }
-
-            if (isSame){
-                ans.add(i);
-            }
+           if (s.substring(i,i+window).equals(pattern)){
+               ans.add(i);
+           }
         }
         System.out.println(s);
         System.out.println(pattern);
